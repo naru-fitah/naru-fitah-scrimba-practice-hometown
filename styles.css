@@ -54,7 +54,7 @@ img {
 .introduction {
     display: flex;
     justify-content: center;
-    padding: 0px 10px 200px;
+    padding: 0px 20px 200px;
 
 }
 
@@ -102,7 +102,7 @@ img {
 
 .image-container-small {
     aspect-ratio: 1/1;
-    width: 217px;
+    width: 200px;
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -119,7 +119,7 @@ img {
 
 .image-container-small img {
     width: 100%;
-    height: 217px;
+    height: 200px;
     object-fit: cover; 
 }
 
@@ -128,12 +128,12 @@ img {
 .row {
     display: flex;
     justify-content: space-between;
-    padding: 0px 10px 200px;
+    padding: 0px 20px 200px;
 }
 
 .row-container {
     display: flex;
-    gap: 10px;
+    gap: 20px;
     justify-content: center;
     align-items: start;
 }
@@ -148,7 +148,7 @@ img {
 }
 
 .local-picks-row {
-    padding: 0px 10px 200px;
+    padding: 0px 20px 200px;
 }
 
 .description {
@@ -169,6 +169,36 @@ img {
     font-size: 14px;
 }
 
+/* Hover Effects */
 
+h1 {
+    transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+h1:hover {
+    transform: translateX(200px);
+    color: rgb(22, 34, 254);
+}
+
+.image-container-big,
+.image-container-small {
+  transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.image-container-big:hover,
+.image-container-small:hover {
+  transform: scale(1.05);
+  color: rgb(22, 34, 254);
+  font-weight: 500;
+}
+
+.content h2 {
+    transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.content h2:hover {
+    transform: scale(1.3);
+    color: rgb(22, 34, 254);
+}
 
 
